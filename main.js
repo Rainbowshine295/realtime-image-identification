@@ -25,6 +25,6 @@ function gotResult(error, results) {
   else {
     console.log(results);
     document.getElementById("result_object_name").innerHTML = results[0].label;
-    document.getElementById("result_object_accuracy").innerHTML = results[0].label.toFixed(3);
+    document.getElementById("result_object_accuracy").innerHTML = results[0].confidence.toFixed(3);
   }
 }
